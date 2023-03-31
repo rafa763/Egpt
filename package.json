@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/rafa763/egpt#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "openai": "^3.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
