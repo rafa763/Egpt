@@ -4,15 +4,15 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 
 dotenv.config()
-server.use(cors({
-    origin: true,
-    credentials: true,
-}))
 
 const PORT = process.env.PORT || 3000;
 
 const server = express()
 server.use(express.json());
+server.use(cors({
+    origin: true,
+    credentials: true,
+}))
 
 server.post('/ask', async (req, res) => {
     const q = req.body.question
