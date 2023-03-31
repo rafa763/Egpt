@@ -1,8 +1,13 @@
 import express from 'express'
 import gpt from './gpt.js'
 import dotenv from 'dotenv'
+import cors from 'cors'
 
 dotenv.config()
+server.use(cors({
+    origin: true,
+    credentials: true,
+}))
 
 const PORT = process.env.PORT || 3000;
 
