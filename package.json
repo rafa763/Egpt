@@ -1,0 +1,31 @@
+{
+  "name": "egpt",
+  "version": "1.0.0",
+  "description": "making chatgpt accessible for those who can't",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafa763/egpt.git"
+  },
+  "keywords": [
+    "chatgpt",
+    "egypt",
+    "egpt"
+  ],
+  "author": "Mohamed Raafat, Steven Samir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafa763/egpt/issues"
+  },
+  "homepage": "https://github.com/rafa763/egpt#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
