@@ -13,6 +13,11 @@ server.use(cors({
     origin: true,
     credentials: true,
 }))
+server.use(express.static("public"));
+
+server.get('/', (req, res) => {
+    res.sendFile(path.join(path.resolve(), 'public', 'index.html'))
+})
 
 server.post('/ask', async (req, res) => {
     const q = req.body.question
